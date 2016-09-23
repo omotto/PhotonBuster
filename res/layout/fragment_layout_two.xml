@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/scroll" 
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">    
+	<RelativeLayout 
+	    android:id="@+id/rect"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp" >
+		 
+		<com.androidplot.xy.XYPlot
+    		android:id="@+id/mySimpleXYPlot"
+    		android:layout_width="fill_parent"
+    		android:layout_height="500px"
+    		android:layout_marginTop="10px"
+    		android:layout_marginLeft="10px"
+    		android:layout_marginRight="10px"
+    		title="Plot"/>
+	<!-- 
+		 <LinearLayout 
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/Chart_layout"
+        	android:orientation="vertical">
+	    </LinearLayout>
+	    
+	    <ImageView
+	        android:id="@+id/frag2_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true" 
+	        android:layout_below="@+id/mySimpleXYPlot" />
+	
+	    <TextView
+	        android:id="@+id/frag2_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textAppearance="?android:attr/textAppearanceLarge" 
+	        android:layout_below="@+id/frag2_icon" />        
+	 -->
+<!--    <SeekBar
+	        android:id="@+id/seekBar1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/frag2_text" /> -->
+	
+	    <SeekBar 
+	        android:id="@+id/seekBar1" 
+	        android:max="4095" 
+	        android:layout_width="match_parent" 
+	        android:layout_height="wrap_content" 
+	        android:layout_alignParentLeft="true" 
+	        android:layout_marginTop="26dp" 
+	        android:layout_below="@+id/mySimpleXYPlot" />
+	    
+	    
+	    <SeekBar
+	        android:id="@+id/seekBar2"
+	        android:max="4095" 	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/seekBar1"
+	        android:layout_below="@+id/seekBar1" />
+	    
+	    <SeekBar
+	        android:id="@+id/seekBar3"
+	        android:max="4095" 	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/seekBar2"
+	        android:layout_below="@+id/seekBar2" />
+	    
+		<SeekBar
+	        android:id="@+id/seekBar4"
+	        android:max="4095" 	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/seekBar3"
+	        android:layout_below="@+id/seekBar3" />
+		
+	    <SeekBar
+	        android:id="@+id/seekBar5"
+	        android:max="4095" 	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/seekBar4"
+	        android:layout_below="@+id/seekBar4" />
+	    
+	    <SeekBar
+	        android:id="@+id/seekBar6"
+	        android:max="4095" 	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/seekBar5"
+	        android:layout_below="@+id/seekBar5" />
+	    
+		<SeekBar
+	        android:id="@+id/seekBar7"
+	        android:max="4095" 	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/seekBar6"
+	        android:layout_below="@+id/seekBar6" />
+		
+		<SeekBar
+	        android:id="@+id/seekBar8"
+	        android:max="4095" 	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/seekBar7"
+	        android:layout_below="@+id/seekBar7" />
+		    
+	    <SeekBar
+	        android:id="@+id/seekBar9"
+	        android:max="4095" 	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/seekBar8"
+	        android:layout_below="@+id/seekBar8" />
+	    
+		<SeekBar
+	        android:id="@+id/seekBar10"
+	        android:max="4095" 	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/seekBar9"
+	        android:layout_below="@+id/seekBar9" />
+	
+		<SeekBar
+	        android:id="@+id/seekBar11"
+	        android:max="4095" 	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/seekBar10"
+	        android:layout_below="@+id/seekBar10" />
+				
+		<SeekBar
+	        android:id="@+id/seekBar12"
+	        android:max="4095" 	        
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/seekBar11"
+	        android:layout_below="@+id/seekBar11" />
+
+		<CheckBox
+		    android:id="@+id/checkBox1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/seekBar12"
+		    android:checked="false"
+		    android:text="RealTime" />
+
+		<Button
+		    android:id="@+id/button1"
+		    style="?android:attr/buttonStyleSmall"
+       		android:layout_width="match_parent"
+        	android:layout_height="wrap_content"		    
+		    android:layout_alignLeft="@+id/seekBar12"
+		    android:layout_below="@+id/checkBox1"
+		    android:text="SAVE" />
+				
+	</RelativeLayout>
+</ScrollView>
